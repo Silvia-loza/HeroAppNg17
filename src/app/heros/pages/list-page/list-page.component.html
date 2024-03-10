@@ -1,1 +1,7 @@
-<p>list-page works!</p>
+<ul>
+  @for (hero of heroes; track hero.id) {
+  <li>{{ hero.superhero }}</li>
+  } @empty {
+  <li>No hero found</li>
+  }
+</ul>
