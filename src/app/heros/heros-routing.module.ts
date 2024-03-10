@@ -28,7 +28,6 @@ const routes: Routes = [
         component: ListPageComponent,
       },
       {
-        //:id tiene que ir al final de la lista de rutas. justo antes de comodín **
         path: ':id',
         component: HeroPageComponent,
       },
