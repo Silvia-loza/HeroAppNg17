@@ -1,1 +1,42 @@
-<p>hero-page works!</p>
+@if (hero) {
+
+<div class="grid p-2">
+  <mat-card class="col-12 sm:col-6">
+    <mat-card-header>
+      <mat-card-title> {{ hero.alter_ego }}</mat-card-title>
+      <mat-card-subtitle>{{ hero.superhero }}</mat-card-subtitle>
+    </mat-card-header>
+    <img [src]="hero | HeroImage" [alt]="hero.superhero" mat-card-image />
+  </mat-card>
+
+  <mat-card class="col-12 sm:col-6 pt-5">
+    <mat-card-title> Información </mat-card-title>
+    <mat-card-subtitle>{{ hero.superhero }}</mat-card-subtitle>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>
+          {{ hero.first_appearance }}
+        </mat-list-item>
+        <mat-list-item>
+          {{ hero.characters }}
+        </mat-list-item>
+        <mat-list-item>
+          {{ hero.publisher }}
+        </mat-list-item>
+        <mat-list-item>
+          {{ hero.alter_ego }}
+        </mat-list-item>
+      </mat-list>
+
+      <button mat-button color="accent" (click)="goBack()">Volver</button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+} @else {
+<mat-grid-list class="mt-2" cols="1" rowHeight="500px">
+  <mat-grid-tile color="primary">
+    <mat-spinner color="accent"></mat-spinner>
+  </mat-grid-tile>
+</mat-grid-list>
+}
