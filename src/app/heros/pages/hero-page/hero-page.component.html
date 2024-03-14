@@ -6,12 +6,17 @@
       <mat-card-title> {{ hero.alter_ego }}</mat-card-title>
       <mat-card-subtitle>{{ hero.superhero }}</mat-card-subtitle>
     </mat-card-header>
-    <img [src]="hero | HeroImage" [alt]="hero.superhero" mat-card-image />
+    <img
+      class="mat-card-img"
+      [src]="hero | HeroImage"
+      [alt]="hero.superhero"
+      mat-card-image
+    />
   </mat-card>
 
-  <mat-card class="col-12 sm:col-6 pt-5">
-    <mat-card-title> Información </mat-card-title>
-    <mat-card-subtitle>{{ hero.superhero }}</mat-card-subtitle>
+  <mat-card class="col-12 sm:col-6 p-5">
+    <mat-card-title class="pl-5 pt-5"> Información </mat-card-title>
+    <mat-card-subtitle class="pl-5">{{ hero.superhero }}</mat-card-subtitle>
     <mat-card-content>
       <mat-list>
         <mat-list-item>
