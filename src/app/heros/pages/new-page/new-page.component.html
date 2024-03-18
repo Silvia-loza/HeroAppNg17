@@ -1,6 +1,6 @@
 <h1>
-  Edit / add hero
-  <small>Superman</small>
+  {{ currentHero.id ? "Edit Hero" : "Add New Hero" }}
+  <small>{{ currentHero.id ? currentHero.superhero : "" }}</small>
 </h1>
 
 <mat-divider class="mb-2"></mat-divider>
@@ -52,8 +52,13 @@
           </mat-form-field>
         </form>
         <div class="flex justify-content-between">
-          <button mat-flat-button color="warn">Delete</button>
+          @if (currentHero.id) {
+          <button mat-flat-button color="warn" (click)="onDeleteHero()">
+            Delete
+          </button>
+          }
 
+          <span></span>
           <button mat-flat-button color="primary" (click)="saveHero()">
             <mat-icon>save</mat-icon>
             Save

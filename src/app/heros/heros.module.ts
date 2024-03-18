@@ -11,6 +11,8 @@ import { MaterialModule } from '../material/material.module';
 import { HeroCardComponent } from './components/hero-card/hero-card.component';
 import { HeroImagePipe } from './pipes/heroImage.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
+import ConfigProvider from 'element-plus/es/components/config-provider/src/config-provider';
+import { ConfirmDialogComponent } from './components/confirmDialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NewPageComponent,
     SearchPageComponent,
     HeroCardComponent,
+    ConfirmDialogComponent,
   ],
   imports: [
     CommonModule,
