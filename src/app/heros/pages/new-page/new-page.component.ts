@@ -68,7 +68,9 @@ export class NewPageComponent implements OnInit {
         });
       return;
     }
-    this.heroesService.addHero(<Hero>this.heroForm.value).subscribe((hero) => {
+    let newHero = this.heroForm.value;
+    delete newHero.id;
+    this.heroesService.addHero(<Hero>newHero).subscribe((hero) => {
       console.log('Hero saved', this.heroForm.value);
       this.router.navigate(['/heros/edit', hero.id]);
       this.showSnackbsar(`${hero.superhero} created`);

@@ -48,7 +48,17 @@
 
           <mat-form-field class="col-12">
             <mat-label>Alternative Image</mat-label>
-            <input matInput type="text" required formControlName="alt_img" />
+
+            <input
+              matInput
+              type="text"
+              formControlName="alt_img"
+              [value]="
+                currentHero.alt_img
+                  ? currentHero.alt_img
+                  : 'assets/heroes/' + currentHero.id + '.jpg'
+              "
+            />
           </mat-form-field>
         </form>
         <div class="flex justify-content-between">
