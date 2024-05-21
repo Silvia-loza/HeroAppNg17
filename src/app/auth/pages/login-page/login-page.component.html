@@ -9,9 +9,14 @@
     <input type="password" matInput placceholder="Contraseña" />
   </mat-form-field>
 
-  <button class="py-5" mat-button mat-flat-button color="primary">
+  <button
+    class="py-5"
+    mat-button
+    mat-flat-button
+    color="primary"
+    (click)="login()"
+  >
     <mat-icon>save</mat-icon>
-    Entrar
   </button>
 
   <div class="flex justify-content-end mt-5">

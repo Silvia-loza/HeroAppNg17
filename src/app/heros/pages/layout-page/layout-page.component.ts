@@ -1,4 +1,7 @@
+import { AuthService } from './../../../auth/servicios/auth.service';
 import { Component } from '@angular/core';
+import { User } from '../../../auth/interfaces/user.interface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-layout-page',
@@ -11,4 +14,15 @@ export class LayoutPageComponent {
     { id: 2, label: 'Nuevo Heroe', icon: 'add', route: './new-hero' },
     { id: 3, label: 'Search', icon: 'search', route: './search' },
   ];
+
+  constructor(private authService: AuthService, private router: Router) {}
+
+  get user(): User | undefined {
+    return this.authService.currentUser;
+  }
+
+  onLogout() {
+    this.authService.logout();
+    this.router.navigate(['/auth/login']);
+  }
 }
