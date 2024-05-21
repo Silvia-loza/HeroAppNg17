@@ -1,28 +1,12 @@
 {
   "users": [
     {
-      "id": 1,
-      "usuario": "John Doe",
+      "id": "1",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
   "heroes": [
-    {
-      "id": "dc-batman",
-      "superhero": "Batman",
-      "publisher": "DC Comics",
-      "alter_ego": "Bruce Wayne",
-      "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne"
-    },
-    {
-      "id": "dc-superman",
-      "superhero": "Superman",
-      "publisher": "DC Comics",
-      "alter_ego": "Kal-El",
-      "first_appearance": "Action Comics #1",
-      "characters": "Kal-El"
-    },
     {
       "id": "dc-flash",
       "superhero": "Flash",
@@ -30,22 +14,6 @@
       "alter_ego": "Jay Garrick",
       "first_appearance": "Flash Comics #1",
       "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
-    },
-    {
-      "id": "dc-green",
-      "superhero": "Green Lantern",
-      "publisher": "DC Comics",
-      "alter_ego": "Alan Scott",
-      "first_appearance": "All-American Comics #16",
-      "characters": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz"
-    },
-    {
-      "id": "dc-arrow",
-      "superhero": "Green Arrow",
-      "publisher": "DC Comics",
-      "alter_ego": "Oliver Queen",
-      "first_appearance": "More Fun Comics #73",
-      "characters": "Oliver Queen"
     },
     {
       "id": "dc-wonder",
@@ -105,11 +73,12 @@
     },
     {
       "id": "marvel-iron",
-      "superhero": "Iron Man",
+      "superhero": "Iron Man 5",
       "publisher": "Marvel Comics",
       "alter_ego": "Tony Stark",
       "first_appearance": "Tales of Suspense #39",
-      "characters": "Tony Stark"
+      "characters": "Tony Stark",
+      "alt_img": "https://lasvegastoppicks.com/wp-content/uploads/2023/11/DALL%C2%B7E-2023-11-16-08.48.04-Create-an-original-and-detailed-illustration-of-a-strong-superheroic-female-figure-based-on-the-character-of-Madame-Web.-She-is-standing-heroically-o-700x700.png"
     },
     {
       "id": "marvel-thor",
@@ -136,22 +105,6 @@
       "characters": "James Howlett"
     },
     {
-      "id": "marvel-daredevil",
-      "superhero": "Daredevil",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Matthew Michael Murdock",
-      "first_appearance": "Daredevil #1",
-      "characters": "Matthew Michael Murdock"
-    },
-    {
-      "id": "marvel-hawkeye",
-      "superhero": "Hawkeye",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Clinton Francis Barton",
-      "first_appearance": "Tales of Suspense #57",
-      "characters": "Clinton Francis Barton"
-    },
-    {
       "id": "marvel-cyclops",
       "superhero": "Cyclops",
       "publisher": "Marvel Comics",
@@ -166,6 +119,41 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "marvel-hulk",
+      "superhero": "Hulk",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Bruce Banner",
+      "first_appearance": "The Incredible Hulk #1",
+      "characters": "Bruce Banner"
+    },
+    {
+      "id": "b0ac",
+      "superhero": "Silvia",
+      "publisher": "Dc Comics",
+      "alter_ego": "Lozano",
+      "first_appearance": "1998",
+      "characters": "Super girl super woman",
+      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7GuVSusU0Fq_2OZjwU3NaeXAtu7eKMcA45NsMmMoqjDdwPrBdr9extr-CWls7SpPCBxc&usqp=CAU"
+    },
+    {
+      "id": "71c1",
+      "superhero": "Super Silvia",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Lozano",
+      "first_appearance": "1986",
+      "characters": "sas",
+      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-AZRBGQo_TEBMWQErhheGtXj-Jh60vIkSYq-OldtNyg&s"
+    },
+    {
+      "id": "1d49",
+      "superhero": "Thor",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Thor",
+      "first_appearance": "1986",
+      "characters": "magic",
+      "alt_img": "https://cdn.marvel.com/content/1x/004tho_ons_mas_mob_04.jpg"
     }
   ]
 }
